@@ -1,0 +1,43 @@
+@import "partials/header";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background: url('../img/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: url('../img/plume.cur'), pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// WATER
+#water {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vh;
+}
