@@ -6,19 +6,34 @@ header {
   h1 {
     text-transform: uppercase;
     font-size: 5rem;
-    color: #fff;
     margin: 0;
     padding: 5px 20px;
+    a {
+      opacity: 1;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+  h2 {
+    color: #E5B1A8!important;
   }
   h2, h3 {
+    margin-top: -20px!important;
     text-transform: uppercase;
-    color: #fff;
     margin: 0;
     padding: 0 20px;
     font-size: 4rem;
   }
-  a:hover {
-    cursor: url('../img/plume.cur'), pointer;
+  a {
+    opacity: .5;
+    &:hover {
+      opacity: 1;
+      cursor: url('../img/plume_1.cur'), pointer;
+      @media only screen and (min-width : 1824px) {
+        cursor: url('../img/plume.cur'), pointer;
+      }
+    }
   }
   #main-nav {
     position: fixed;

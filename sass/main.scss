@@ -7,12 +7,17 @@ html, body {
   width: 100vw;
   box-sizing: border-box;
   font-size: 16px;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
-  background: url('../img/bg2.jpg');
+  background: url('../img/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center top;
+  background-size: contain;
   background-attachment: fixed;
-  cursor: url('../img/plume.cur'), pointer;
+  cursor: url('../img/plume_1.cur'), pointer;
+  @media only screen and (min-width : 1824px) {
+    cursor: url('../img/plume.cur'), pointer;
+  }
 }
 
 a {
@@ -24,7 +29,9 @@ a {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
   &:hover {
-    opacity: .7;
+  }
+  &.active {
+    opacity: 1;
   }
 }
 
@@ -34,10 +41,15 @@ ul {
   margin: 0;
 }
 
-// WATER
-#water {
-  position: fixed;
-  z-index: -1;
-  height: 100vh;
-  width: 100vh;
+section {
+  position: absolute;
+  top: 50vh;
+  padding-left: 20px;
+  width: 35vw;
+  height: 40vh;
+  overflow: scroll;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
 }
