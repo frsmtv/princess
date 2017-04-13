@@ -13,7 +13,7 @@ html, body {
   background: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   cursor: url('../img/plume_1.cur'), pointer;
   @media only screen and (min-width : 1824px) {
@@ -40,6 +40,19 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+// MARBLE
+#marble {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
+  img {
+    width: 50vw;
+    opacity: .9;
+  }
+
 }
 
 section {
