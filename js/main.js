@@ -66,7 +66,6 @@ $(document).ready(function(){
     perturbance: 0.02,
     interactive: true,
     resolution: 1024,
-    imageUrl: '../img/bg2.jpg'
   });
 
 });
