@@ -1,5 +1,8 @@
 @import "partials/header";
+@import "partials/about";
+@import "partials/live";
 @import "partials/contact";
+@import "partials/footer";
 
 html, body {
   margin: 0;
@@ -11,15 +14,15 @@ html, body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   background: #8B8C8E;
-  background: url('../img/bg.jpg');
+  // background: url('../img/bg2.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
-  cursor: url('../img/plume_1.cur'), pointer;
-  @media only screen and (min-width : 1824px) {
-    cursor: url('../img/plume.cur'), pointer;
-  }
+  // cursor: url('../img/plume_1.cur'), pointer;
+  // @media only screen and (min-width : 1824px) {
+  //   cursor: url('../img/plume.cur'), pointer;
+  // }
 }
 
 a {
@@ -34,6 +37,7 @@ a {
   }
   &.active {
     opacity: 1;
+    color: #E5B1A8;
   }
 }
 
@@ -58,7 +62,7 @@ ul {
 
 section {
   position: absolute;
-  top: 200px;
+  top: 400px;
   padding-left: 20px;
   width: 35vw;
   height: 40vh;
@@ -71,6 +75,6 @@ section {
     margin: 0;
   }
   a:hover {
-    opacity: .5;
+    color: #E5B1A8;
   }
 }

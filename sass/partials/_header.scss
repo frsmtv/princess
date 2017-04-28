@@ -26,13 +26,12 @@ header {
     font-size: 4rem;
   }
   a {
-    opacity: .5;
     &:hover {
-      opacity: 1;
-      cursor: url('../img/plume_1.cur'), pointer;
-      @media only screen and (min-width : 1824px) {
-        cursor: url('../img/plume.cur'), pointer;
-      }
+      color: #E5B1A8;
+      // cursor: url('../img/plume_1.cur'), pointer;
+      // @media only screen and (min-width : 1824px) {
+      //   cursor: url('../img/plume.cur'), pointer;
+      // }
     }
   }
   #main-nav {
@@ -45,6 +44,6 @@ header {
     line-height: 1;
     text-align: right;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 }
