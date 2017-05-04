@@ -3,11 +3,27 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  /* ----------- Mobile ----------- */
+  /* Portrait and Landscape */
+  @media only screen and (max-device-width: 736px) {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
+  }
   h1 {
     text-transform: uppercase;
     font-size: 5rem;
     margin: 0;
     padding: 5px 20px;
+    /* ----------- Mobile ----------- */
+    /* Portrait and Landscape */
+    @media only screen and (max-device-width: 736px) {
+        font-size: 3rem;
+        text-align: center;
+    }
     a {
       opacity: 1;
       &:hover {
@@ -24,6 +40,13 @@ header {
     margin: 0;
     padding: 0 20px;
     font-size: 4rem;
+    /* ----------- Mobile ----------- */
+    /* Portrait and Landscape */
+    @media only screen and (max-device-width: 736px) {
+      font-size: 2rem;
+      line-height: 2;
+      text-align: center;
+    }
   }
   a {
     &:hover {
@@ -45,5 +68,10 @@ header {
     text-align: right;
     color: #fff;
     text-transform: uppercase;
+    /* ----------- Mobile ----------- */
+    /* Portrait and Landscape */
+    @media only screen and (max-device-width: 736px) {
+        display: none;
+    }
   }
 }
