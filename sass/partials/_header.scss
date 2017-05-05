@@ -31,6 +31,15 @@ header {
       and (orientation: portrait) {
         font-size: 3.8rem;
     }
+    /* Landscape */
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+        margin-top: 15px!important;
+        margin-bottom: 5px;
+    }
     a {
       opacity: 1;
       &:hover {
@@ -47,6 +56,8 @@ header {
       and (max-device-width: 568px)
       and (orientation: portrait) {
         font-size: 1.8rem;
+        line-height: 1!important;
+        margin-bottom: 20px!important;
     }
   }
   h2, h3 {
@@ -88,5 +99,5 @@ header {
     @media only screen and (max-device-width: 736px) {
         display: none;
     }
-  }
+  }  
 }

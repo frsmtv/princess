@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="/css/overlay.css">
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
@@ -39,13 +40,33 @@
             <ul>
                 <li><a id="home-btn" class="active" href="#">home</a></li>
                 <li><a id="live-btn" href="#">live</a></li>
-                <!-- <li><a id="about-btn" href="#">about</a></li> -->
                 <li><a id="contact-btn" href="#">contact</a></li>
             </ul>
 
         </nav>
 
     </header>
+
+    <!-- MOBILE NAV -->
+    <div id="mobile-nav">
+
+        <div class="navbar-header">
+            <span id="toggle" class="toggle-button">me<br>
+            nu</span>
+        </div>
+
+
+        <nav id="overlay" class="overlay animated fadeIn">
+
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="live.html">live</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </div> <!-- End: mobile-nav -->
 
     <!-- MAIN CONTENT -->
     <main>
@@ -94,6 +115,7 @@
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/jquery.ripples-min.js"></script>
+<script src="js/overlay.js"></script>
 <script src="js/main.js"></script>
 
 </body>
